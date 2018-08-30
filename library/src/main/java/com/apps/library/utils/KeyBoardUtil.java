@@ -84,6 +84,8 @@ public class KeyBoardUtil {
         InputMethodManager inputMethodManager = (InputMethodManager)
             edittext.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
         if (inputMethodManager.isActive()) {
+
+
             inputMethodManager.hideSoftInputFromWindow(edittext.getWindowToken(), 0);
         }
     }
